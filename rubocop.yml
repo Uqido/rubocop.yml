@@ -11,6 +11,7 @@ AllCops:
     - bin/*
     - db/schema.rb
     - db/migrate/*
+    - lib/*/bin/*
     - tmp/**/*
 
 
