@@ -8,6 +8,7 @@ AllCops:
     - config.ru
     - lib/**/*.rake
   Exclude:
+    - bin/*.*
     - db/schema.rb
     - db/migrate/*.*
     - tmp/**/*.*
