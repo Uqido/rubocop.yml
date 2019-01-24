@@ -8,10 +8,10 @@ AllCops:
     - config.ru
     - lib/**/*.rake
   Exclude:
-    - bin/*.*
+    - bin/*
     - db/schema.rb
-    - db/migrate/*.*
-    - tmp/**/*.*
+    - db/migrate/*
+    - tmp/**/*
 
 
 Style/AsciiComments:
