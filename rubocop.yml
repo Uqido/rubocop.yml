@@ -1,6 +1,8 @@
+# inherit_from:
+#   - https://raw.githubusercontent.com/Uqido/uqido-linters-config/master/rubocop.yml
 AllCops:
   TargetRubyVersion:
-    '2.5'
+    '2.6'
   Include:
     - Capfile
     - Gemfile
@@ -12,9 +14,6 @@ AllCops:
     - db/migrate/*.*
     - tmp/**/*.*
 
-
-Style/AsciiComments:
-  Enabled: false
 
 Style/BlockDelimiters:
   Enabled: false
@@ -77,7 +76,7 @@ Style/RegexpLiteral:
   AllowInnerSlashes: true
 
 Style/RescueModifier:
-  Enabled: false
+  Enabled: true
 
 Style/SafeNavigation:
   Enabled: true
@@ -140,6 +139,12 @@ Metrics/PerceivedComplexity:
   Max: 20
 
 
+Layout/AlignHash:
+  Enabled: false
+
+Layout/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
 Layout/EmptyLinesAroundBlockBody:
   EnforcedStyle: no_empty_lines
 
@@ -149,11 +154,11 @@ Layout/EmptyLinesAroundClassBody:
 Layout/IndentArray:
   EnforcedStyle: consistent
 
-Layout/IndentHash:
-  EnforcedStyle: consistent
-
 Layout/IndentationConsistency:
   EnforcedStyle: rails
+
+Layout/IndentHash:
+  EnforcedStyle: consistent
 
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
@@ -161,17 +166,6 @@ Layout/MultilineMethodCallIndentation:
 Layout/MultilineOperationIndentation:
   EnforcedStyle: indented
 
-Layout/AlignHash:
-  EnforcedHashRocketStyle: table
-
-Layout/AlignParameters:
-  EnforcedStyle: with_fixed_indentation
-
-# Layout/LeadingCommentSpace:
-#   Enabled: false
 
 Performance/Casecmp:
   Enabled: false
-
-# Lint/NonLocalExitFromIterator:
-#  Enabled: false
