@@ -1,18 +1,98 @@
 # inherit_from:
 #   - https://raw.githubusercontent.com/Uqido/uqido-linters-config/master/rubocop.yml
 AllCops:
-  Include:
-    - Capfile
-    - Gemfile
-    - Rakefile
-    - config.ru
-    - lib/**/*.rake
   Exclude:
     - bin/*
-    - db/schema.rb
     - db/migrate/*
+    - db/schema.rb
+    - db/seeds.rb
+    - lib/*/Gemfile
+    - lib/*/Rakefile
     - lib/*/bin/*
     - tmp/**/*
+
+
+Layout/AlignHash:
+  Enabled: false
+
+Layout/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
+Layout/EmptyLinesAroundBlockBody:
+  EnforcedStyle: no_empty_lines
+
+Layout/EmptyLinesAroundClassBody:
+  EnforcedStyle: no_empty_lines
+
+Layout/IndentArray:
+  EnforcedStyle: consistent
+
+Layout/IndentationConsistency:
+  EnforcedStyle: rails
+
+Layout/IndentHash:
+  EnforcedStyle: consistent
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Layout/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/BlockLength:
+  Max: 100
+
+Metrics/BlockNesting:
+  Max: 4
+
+Metrics/ClassLength:
+  Max: 1000
+
+Metrics/CyclomaticComplexity:
+  Max: 15
+
+Metrics/LineLength:
+  Enabled: false
+  Max: 80
+
+Metrics/MethodLength:
+  Max: 100
+
+Metrics/ModuleLength:
+  Max: 1000
+
+Metrics/ParameterLists:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Max: 20
+
+
+Performance/Casecmp:
+  Enabled: false
+
+
+Rails:
+  Enabled: true
+
+Rails/HasAndBelongsToMany:
+  Enabled: false
+
+Rails/HasManyOrHasOneDependent:
+  Enabled: false
+
+Rails/InverseOf:
+  Enabled: false
+
+Rails/SafeNavigation:
+  ConvertTry: true
+
+Rails/SkipsModelValidations:
+  Enabled: false
 
 
 Style/AsciiComments:
@@ -79,7 +159,7 @@ Style/RegexpLiteral:
   AllowInnerSlashes: true
 
 Style/RescueModifier:
-  Enabled: true
+  Enabled: false
 
 Style/SafeNavigation:
   Enabled: true
@@ -88,87 +168,4 @@ Style/SingleLineMethods:
   Enabled: false
 
 Style/SymbolArray:
-  Enabled: false
-
-
-Rails:
-  Enabled: true
-
-Rails/HasAndBelongsToMany:
-  Enabled: false
-
-Rails/HasManyOrHasOneDependent:
-  Enabled: false
-
-Rails/InverseOf:
-  Enabled: false
-
-Rails/SafeNavigation:
-  ConvertTry: true
-
-Rails/SkipsModelValidations:
-  Enabled: false
-
-
-Metrics/AbcSize:
-  Enabled: false
-
-Metrics/BlockLength:
-  Max: 100
-
-Metrics/BlockNesting:
-  Max: 4
-
-Metrics/ClassLength:
-  Max: 1000
-
-Metrics/CyclomaticComplexity:
-  Max: 15
-
-Metrics/LineLength:
-  Enabled: false
-  Max: 80
-
-Metrics/MethodLength:
-  Max: 100
-
-Metrics/ModuleLength:
-  Max: 1000
-
-Metrics/ParameterLists:
-  Enabled: false
-
-Metrics/PerceivedComplexity:
-  Max: 20
-
-
-Layout/AlignHash:
-  Enabled: false
-
-Layout/AlignParameters:
-  EnforcedStyle: with_fixed_indentation
-
-Layout/EmptyLinesAroundBlockBody:
-  EnforcedStyle: no_empty_lines
-
-Layout/EmptyLinesAroundClassBody:
-  EnforcedStyle: no_empty_lines
-
-Layout/IndentArray:
-  EnforcedStyle: consistent
-
-Layout/IndentationConsistency:
-  EnforcedStyle: rails
-
-Layout/IndentHash:
-  EnforcedStyle: consistent
-
-Layout/MultilineMethodCallIndentation:
-  EnforcedStyle: indented
-
-Layout/MultilineOperationIndentation:
-  EnforcedStyle: indented
-
-
-Performance/Casecmp:
   Enabled: false
