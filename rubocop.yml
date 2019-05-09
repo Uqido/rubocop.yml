@@ -1,5 +1,7 @@
 # inherit_from:
 #   - https://raw.githubusercontent.com/Uqido/uqido-linters-config/master/rubocop.yml
+require: rubocop-performance
+
 AllCops:
   Exclude:
     - bin/*
@@ -9,8 +11,8 @@ AllCops:
     - lib/*/Gemfile
     - lib/*/Rakefile
     - lib/*/bin/*
+    - spec/**/*
     - tmp/**/*
-
 
 Layout/AlignHash:
   Enabled: false
@@ -39,7 +41,6 @@ Layout/MultilineMethodCallIndentation:
 Layout/MultilineOperationIndentation:
   EnforcedStyle: indented
 
-
 Metrics/AbcSize:
   Enabled: false
 
@@ -57,7 +58,7 @@ Metrics/CyclomaticComplexity:
 
 Metrics/LineLength:
   Enabled: false
-  Max: 80
+  Max: 120
 
 Metrics/MethodLength:
   Max: 100
@@ -71,10 +72,8 @@ Metrics/ParameterLists:
 Metrics/PerceivedComplexity:
   Max: 20
 
-
 Performance/Casecmp:
   Enabled: false
-
 
 Rails:
   Enabled: true
@@ -94,6 +93,13 @@ Rails/SafeNavigation:
 Rails/SkipsModelValidations:
   Enabled: false
 
+Rails/UnknownEnv:
+  Environments:
+    - development
+    - test
+    - simulation
+    - staging
+    - production
 
 Style/AsciiComments:
   Enabled: false
