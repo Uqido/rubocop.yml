@@ -9,7 +9,7 @@ module.exports = {
   "parser": "babel-eslint",
   "rules": {
     "curly": ["error", "multi-or-nest", "consistent"],
-    "key-spacing": ["error", { align: "value" }],
+    "key-spacing": ["error", { "mode": "minimum" }],
     "no-eval": "off",
     "no-multi-spaces": ["error", { exceptions: {
       "VariableDeclarator": true,
