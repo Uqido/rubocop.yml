@@ -1,21 +1,23 @@
 rules:
-  no-important:
-    - 0
-  placeholder-in-extend:
-    - 0
-  force-pseudo-nesting:
-    - 0
-  no-color-keywords:
-    - 0
-  hex-length:
-    - 0
-
   class-name-format:
     - 1
     - convention: hyphenatedbem
-  property-sort-order:
+  force-pseudo-nesting:
+    - 0
+  hex-length:
+    - 0
+  leading-zero:
     - 1
-    - order: recess
+    - include: true
+  no-important:
+    - 0
+  no-color-keywords:
+    - 0
   no-color-literals:
     - 1
     - allow-rgba: true
+  placeholder-in-extend:
+    - 0
+  property-sort-order:
+    - 1
+    - order: recess
