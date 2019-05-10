@@ -11,6 +11,8 @@ AllCops:
     - lib/*/Gemfile
     - lib/*/Rakefile
     - lib/*/bin/*
+    - lib/*/*.gemspec
+    - node_modules/**/*
     - spec/**/*
     - tmp/**/*
 
@@ -26,13 +28,13 @@ Layout/EmptyLinesAroundBlockBody:
 Layout/EmptyLinesAroundClassBody:
   EnforcedStyle: no_empty_lines
 
-Layout/IndentArray:
-  EnforcedStyle: consistent
-
 Layout/IndentationConsistency:
   EnforcedStyle: rails
 
-Layout/IndentHash:
+Layout/IndentFirstArrayElement:
+  EnforcedStyle: consistent
+
+Layout/IndentFirstHashElement:
   EnforcedStyle: consistent
 
 Layout/MultilineMethodCallIndentation:
@@ -85,6 +87,9 @@ Rails/HasManyOrHasOneDependent:
   Enabled: false
 
 Rails/InverseOf:
+  Enabled: false
+
+Rails/OutputSafety:
   Enabled: false
 
 Rails/SafeNavigation:
