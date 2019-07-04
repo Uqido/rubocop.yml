@@ -98,16 +98,16 @@ Rails/OutputSafety:
 Rails/SafeNavigation:
   ConvertTry: true
 
-#Rails/SkipsModelValidations:
-#  Enabled: false
+Rails/SkipsModelValidations:
+  Enabled: false
 
-#Rails/UnknownEnv:
-#  Environments:
-#    - development
-#    - test
-#    - simulation
-#    - staging
-#    - production
+Rails/UnknownEnv:
+  Environments:
+    - development
+    - test
+    - simulation
+    - staging
+    - production
 
 Style/AsciiComments:
   Enabled: false
