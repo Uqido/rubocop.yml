@@ -86,11 +86,11 @@ Rails:
 Rails/HasAndBelongsToMany:
   Enabled: false
 
-#Rails/HasManyOrHasOneDependent:
-#  Enabled: false
+Rails/HasManyOrHasOneDependent:
+  Enabled: false
 
-#Rails/InverseOf:
-#  Enabled: false
+Rails/InverseOf:
+  Enabled: false
 
 #Rails/OutputSafety:
 #  Enabled: false
