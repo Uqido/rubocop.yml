@@ -83,8 +83,8 @@ Performance/Casecmp:
 Rails:
   Enabled: true
 
-#Rails/HasAndBelongsToMany:
-#  Enabled: false
+Rails/HasAndBelongsToMany:
+  Enabled: false
 
 #Rails/HasManyOrHasOneDependent:
 #  Enabled: false
