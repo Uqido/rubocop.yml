@@ -80,8 +80,8 @@ Metrics/PerceivedComplexity:
 Performance/Casecmp:
   Enabled: false
 
-#Rails:
-#  Enabled: true
+Rails:
+  Enabled: true
 
 #Rails/HasAndBelongsToMany:
 #  Enabled: false
