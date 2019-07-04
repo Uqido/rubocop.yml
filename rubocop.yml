@@ -31,8 +31,8 @@ Layout/EmptyLinesAroundBlockBody:
 Layout/EmptyLinesAroundClassBody:
   EnforcedStyle: no_empty_lines
 
-#Layout/IndentationConsistency:
-#  EnforcedStyle: indented_internal_methods
+Layout/IndentationConsistency:
+  EnforcedStyle: indented_internal_methods
 
 Layout/IndentFirstArrayElement:
   EnforcedStyle: consistent
