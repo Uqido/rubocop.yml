@@ -32,7 +32,7 @@ Layout/EmptyLinesAroundClassBody:
   EnforcedStyle: no_empty_lines
 
 Layout/IndentationConsistency:
-  EnforcedStyle: rails
+  EnforcedStyle: indented_internal_methods
 
 Layout/IndentFirstArrayElement:
   EnforcedStyle: consistent
