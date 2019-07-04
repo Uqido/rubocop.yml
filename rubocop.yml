@@ -92,11 +92,11 @@ Rails/HasManyOrHasOneDependent:
 Rails/InverseOf:
   Enabled: false
 
-#Rails/OutputSafety:
-#  Enabled: false
+Rails/OutputSafety:
+  Enabled: false
 
-#Rails/SafeNavigation:
-#  ConvertTry: true
+Rails/SafeNavigation:
+  ConvertTry: true
 
 #Rails/SkipsModelValidations:
 #  Enabled: false
