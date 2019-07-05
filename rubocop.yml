@@ -17,7 +17,7 @@ AllCops:
     - tmp/**/*
 
 Layout/AlignArguments:
-  EnforcedStyle: rails
+  EnforcedStyle: with_fixed_indentation
 
 Layout/AlignHash:
   Enabled: false
@@ -32,7 +32,7 @@ Layout/EmptyLinesAroundClassBody:
   EnforcedStyle: no_empty_lines
 
 Layout/IndentationConsistency:
-  EnforcedStyle: indented_internal_methods
+  EnforcedStyle: rails
 
 Layout/IndentFirstArrayElement:
   EnforcedStyle: consistent
