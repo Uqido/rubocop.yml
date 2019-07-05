@@ -17,7 +17,7 @@ AllCops:
     - tmp/**/*
 
 Layout/AlignArguments:
-  EnforcedStyle: with_fixed_indentation
+  EnforcedStyle: rails
 
 Layout/AlignHash:
   Enabled: false
