@@ -18,6 +18,9 @@ AllCops:
     - spec/**/*
     - tmp/**/*
 
+Layout/AlignArguments:
+  EnforcedStyle: with_fixed_indentation
+
 Layout/AlignHash:
   Enabled: false
 
