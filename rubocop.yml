@@ -1,6 +1,8 @@
 # inherit_from:
 #   - https://raw.githubusercontent.com/Uqido/uqido-linters-config/master/rubocop.yml
-require: rubocop-performance
+require:
+  - rubocop-performance
+  - rubocop-rails
 
 AllCops:
   Exclude:
@@ -29,7 +31,7 @@ Layout/EmptyLinesAroundClassBody:
   EnforcedStyle: no_empty_lines
 
 Layout/IndentationConsistency:
-  EnforcedStyle: rails
+  EnforcedStyle: indented_internal_methods
 
 Layout/IndentFirstArrayElement:
   EnforcedStyle: consistent
