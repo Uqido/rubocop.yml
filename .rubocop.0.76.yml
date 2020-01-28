@@ -1,4 +1,4 @@
-nherit_from:
+inherit_from:
   - https://raw.githubusercontent.com/Uqido/uqido-linters-config/master/.rubocop.base.yml
 
 Layout/AlignArguments:
