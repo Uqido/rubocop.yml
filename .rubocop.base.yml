@@ -1,5 +1,3 @@
-# inherit_from:
-#   - https://raw.githubusercontent.com/Uqido/uqido-linters-config/master/rubocop.yml
 require:
   - rubocop-performance
   - rubocop-rails
@@ -18,15 +16,6 @@ AllCops:
     - spec/**/*
     - tmp/**/*
 
-Layout/AlignArguments:
-  EnforcedStyle: with_fixed_indentation
-
-Layout/AlignHash:
-  Enabled: false
-
-Layout/AlignParameters:
-  EnforcedStyle: with_fixed_indentation
-
 Layout/EmptyLinesAroundBlockBody:
   EnforcedStyle: no_empty_lines
 
@@ -35,12 +24,6 @@ Layout/EmptyLinesAroundClassBody:
 
 Layout/IndentationConsistency:
   EnforcedStyle: indented_internal_methods
-
-Layout/IndentFirstArrayElement:
-  EnforcedStyle: consistent
-
-Layout/IndentFirstHashElement:
-  EnforcedStyle: consistent
 
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented

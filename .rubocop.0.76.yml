@@ -1,0 +1,17 @@
+nherit_from:
+  - https://raw.githubusercontent.com/Uqido/uqido-linters-config/master/.rubocop.base.yml
+
+Layout/AlignArguments:
+  EnforcedStyle: with_fixed_indentation
+
+Layout/AlignHash:
+  Enabled: false
+
+Layout/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
+Layout/IndentFirstArrayElement:
+  EnforcedStyle: consistent
+
+Layout/IndentFirstHashElement:
+  EnforcedStyle: consistent
