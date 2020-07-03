@@ -46,7 +46,7 @@ Metrics/ClassLength:
 Metrics/CyclomaticComplexity:
   Max: 15
 
-Metrics/LineLength:
+Layout/LineLength:
   Enabled: false
   Max: 120
 
@@ -73,10 +73,10 @@ Rails/HasAndBelongsToMany:
 
 Rails/HasManyOrHasOneDependent:
   Enabled: false
-  
+
 Rails/HelperInstanceVariable:
   Enabled: false
-  
+
 Rails/InverseOf:
   Enabled: false
 
