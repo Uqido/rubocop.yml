@@ -16,6 +16,10 @@ Layout/FirstArrayElementIndentation:
 Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
 
+Layout/LineLength:
+  Enabled: false
+  Max: 120
+
 Style/HashEachMethods:
   Enabled: true
 
