@@ -6,21 +6,30 @@ This repository contains some linter configurations for the linter tools used in
 
 ## Rubocop
 
+* Our Rubocop rules needs [rubocop-performance](https://github.com/rubocop-hq/rubocop-performance) and [rubocop-rails](https://github.com/rubocop-hq/rubocop-rails) gems: add these to your `Gemfile`:
+
+  ```ruby
+  group :development do
+    gem 'rubocop-performance', require: false
+    gem 'rubocop-rails', require: false
+  end
+  ```
+
 * In your project's root create a new file named `.rubocop.yml`
 
 * Add to `.rubocop.yml` the `inherit_from` rule like this to inherit from the main rubocop configuration:
 
-    ```yaml
-    inherit_from:
-      - https://raw.githubusercontent.com/Uqido/uqido-linters-config/master/.rubocop.yml
-    ```
+  ```yaml
+  inherit_from:
+    - https://raw.githubusercontent.com/Uqido/uqido-linters-config/master/.rubocop.yml
+  ```
 
 * If you use another Rubocop version (eg. 0.80), you have to specify another rule set
 
-    ```yaml
-    inherit_from:
-      - https://raw.githubusercontent.com/Uqido/uqido-linters-config/master/.rubocop.0.80.yml
-    ```
+  ```yaml
+  inherit_from:
+    - https://raw.githubusercontent.com/Uqido/uqido-linters-config/master/.rubocop.0.80.yml
+  ```
 
 * Then, add below the `inherit_from` rule your custom rule set.
 
